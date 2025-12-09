@@ -1,0 +1,321 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    font-family: "Science Gothic", sans-serif;
+    color: white;
+}
+
+/* CONTAINER CENTRAL */
+.interface {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 40px 0;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+    height: 130px;
+}
+
+/* MENU */
+.menu-desktop ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-desktop ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu-desktop ul li a:hover {
+    opacity: 0.8;
+}
+
+/* BOTÃO CONTATO */
+.contato-btn a { 
+   
+    display: inline-block; 
+    
+    padding: 10px 22px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 600;
+    
+   
+    text-decoration: none; 
+}
+.contato-btn button:hover {
+    background-color: rgb(255, 109, 40);
+}
+
+/* LINK DO HEADER */
+header a {
+    color: orangered;
+    text-decoration: none;
+}
+
+/* ----------------------------- */
+/* SEÇÃO TOPO DO SITE  */
+/* ----------------------------- */
+
+section.topo-do-site {
+    padding: 150px 4%;
+    margin-top: 40px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* TÍTULO */
+section.topo-do-site h1 {
+    color: white;
+    font-size: 46px;
+    line-height: 1.2;
+    max-width: 720px;
+}
+
+section.topo-do-site h1 span {
+    color: orangered;
+}
+
+/* PARÁGRAFO AJUSTADO */
+section.topo-do-site p {
+    color: white;
+    margin: 40px 0;
+    max-width: 720px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* IMAGEM DO TOPO */
+.img-topo-site img {
+    width: 250px;
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* =========================== */
+/* ESTILOS DA SEÇÃO CONTATO */
+/* =========================== */
+
+.lista-contato {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; 
+}
+
+.lista-contato li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.lista-contato .label {
+    font-weight: bold;
+    margin-right: 5px; 
+}
+
+.lista-contato a {
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.lista-contato li:nth-child(1) a {
+    color: rgb(255, 0, 0); 
+}
+
+.lista-contato li:nth-child(2) a {
+    color: rgb(0, 153, 255); 
+}
+
+.lista-contato li:nth-child(3) a {
+    color: rgb(128, 0, 122); 
+}
+
+/* =========================== */
+/* RESPONSIVIDADE */
+/* =========================== */
+
+@media (max-width: 900px) {
+    section.topo-do-site {
+        padding: 80px 4%;
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 68px;
+    }
+
+    .menu-desktop ul {
+        gap: 18px;
+    }
+
+    section.topo-do-site h1 { 
+        font-size: 32px;
+        text-align: center;
+        max-width: 100%; 
+    }
+
+    section.topo-do-site p { 
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================== */
+/* SEÇÃO ESPECIALIDADES */
+/* =========================== */
+
+.secao-especialidades {
+    margin-top: 80px;
+}
+
+.secao-especialidades h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: orangered;
+}
+
+.secao-especialidades ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.secao-especialidades ul li::before {
+    content: "• ";
+    color: orangered;
+    font-weight: bold;
+}
+
+/* =========================== */
+/* ESTILOS DA SEÇÃO PROJETOS */
+/* =========================== */
+
+.portifolio-projetos {
+    margin-top: 50px;
+}
+
+.projeto-item {
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 50px;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.portifolio-projetos hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    margin: 40px 0;
+}
+
+.projeto-item h2 {
+    font-size: 32px;
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+.projeto-item p {
+    color: #ccc;
+    line-height: 1.6;
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.img-projeto img {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
+}
+
+.btn-projeto {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn-projeto:hover {
+    background-color: rgb(255, 109, 40);
+}
+
+/* RESPONSIVO DOS PROJETOS */
+
+@media (max-width: 900px) {
+    .projeto-item.flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .info-projeto {
+        order: 2; 
+    }
+
+    .img-projeto {
+        order: 1; 
+    }
+
+    .img-projeto img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .projeto-item p {
+        margin: 15px auto;
+    }
+}
+
